@@ -9,6 +9,13 @@
 #windowport {
   width: 100%;
   height: 100%;
+  background-color: rgb(32,32,32);
+}
+
+#nojs {
+  font-family: monospace; /* necessary! */
+  font-size: 14px;
+  color: white;
 }
 
 #errorpane {
@@ -45,6 +52,7 @@
   width: 100%;
   text-align: center;
   top: 20%;
+  color: white;
 }
 
 .WindowFrame {
@@ -52,13 +60,15 @@
      can change that, but don't touch the position or margin. */
   position: absolute;
   margin: 0px;
-  background: #FFFFEE;
+  background: rgb(23,23,23);
+  color: white;
+
 }
 
 .BufferWindow {
   overflow: scroll;   /* vertical scrollbar is mandatory */
   overflow-x: hidden; /* but horizontal scrollbar is forbidden */
-  font-family: Palatino, Georgia, serif;
+  font-family: Courier, monospace;
   font-size: 14px;
   padding: 6px 10px 6px 10px;
 }
@@ -68,10 +78,11 @@
 }
 
 .GridWindow {
-  background: #FFD0A0;
+  background: #3863A5;
   overflow: hidden;
   font-family: monospace; /* necessary! */
   font-size: 14px;
+  color: white;
   padding: 6px 10px 6px 10px;
 }
 
@@ -91,9 +102,10 @@
   /* This describes the "More" prompt that flashes in the bottom right corner
      of a window when it needs paging. */
   font-weight: bold;
+  font-family: Courier, monospace;
   position: absolute;
-  background: #603010;
-  color: #FFFFCC;
+  background: grey;
+  color: white;
   opacity: 0.5;
   padding: 2px 6px;
   -webkit-border-radius: 4px;
@@ -121,11 +133,13 @@
   outline-style: none;
   background: none;
   font-weight: bold;
+  color: white;
 }
 
 .BufferWindow .Input {
-  font-family: Palatino, Georgia, serif;
+  font-family: Courier, monospace;
   font-size: 14px;
+  padding-left: 10px;
 }
 
 .GridWindow .Input {
@@ -200,12 +214,14 @@
 }
 
 .Style_blockquote {
-  background: #FFF0C0;
+  background: rgb(23,23,23);
 }
 
 .Style_input {
   font-weight: bold;
-  color: #300000;
+  /*color: #300000;*/
+  color: white;
+  padding-left: 10px;
 }
 
 .Style_user1 {
